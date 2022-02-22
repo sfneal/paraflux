@@ -1,0 +1,11 @@
+{
+  "name": "paraflux",
+  "version": "0.1.0",
+  "description": "Parallax images",
+  "repository": "https://github.com/sfneal/paraflux.git",
+  "author": "sfneal <stephen.neal14@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2"
+  }
+}
