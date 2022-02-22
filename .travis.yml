@@ -6,10 +6,20 @@ cache:
 
 node_js:
   - node
-  - 'lts/*'
 
 install:
   - yarn install
 
 script:
   - yarn pack
+
+deploy:
+  provider: npm
+  email: stephen.neal14@gmail.com
+  api_key:
+    secure: z/rg8UqooyrrjnV6FT08hxZmyxUDzWKrkIK1rM4K4jmpcppU8iT1xfud3OXt9Dz6baicqXzUbfTZp9yQBse44+oyijJ6sKs1fwC8mQzw+cQQuaaJGtWkHcH+pbN6JfqRcO8RFwa3WCC5/Rt6LAfmNei5sAUycB4dRaphtRgWNKwXK7Xn+tpIesabhUlEdVTGlqRyiWjg4JyxLFY5TheamvS+LLiOdXgO0QUNBEJgfEU9KI/WE4Ht7LuRr24cotOiAlQH2S0X+XFUcPmulAwHxmqi/wywLa/ObmS/qLTW4Z0wstk/KbKSQlywUhvCgbuZK1NsokSb4QbjtZfZCJWZaAj1KFhmu5qQpFNttrOFGJlw6s5Lv0An2XIlwHc2cH59tEpTlrZBWAcMHn7LEPRLz3ya6QGIMnTKqaiizERw1RZeZry4ytOWIwpgkbMsodj9W9AY3K+qzK0kXVmzYZfT1I+ST0+BVw1xrG4AdutkQVLJYftWmJZBGXARahOB1CH2n0hAd3KpegO7hk2EbWVBBPSYtCsiTH5o5IV3f6anKu7iu4/I0OEY8noGqI3vdYbEfpgef7ALeqhSChGkxCMJYpnOqPfRLPe6/0fJjK5asJVU/0z+TqMozjZnuG/pQMyRcJtws3n0/CB1oYMhI7HmzjpbqDFFQpxu+MG/+kGdq1I=
+  skip_existing: true
+  on:
+    tags: true
+    repo: sfneal/paraflux
+  skip_cleanup: 'true'
