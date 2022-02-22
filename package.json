@@ -5,6 +5,7 @@
   "repository": "https://github.com/sfneal/paraflux.git",
   "author": "sfneal <stephen.neal14@gmail.com>",
   "license": "MIT",
+  "files": ["src"],
   "dependencies": {
     "jquery": "^3.2"
   }
